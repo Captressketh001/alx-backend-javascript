@@ -5,10 +5,10 @@ export default class Car {
     this._color = color;
   }
 
-  get brand(){
+  get brand() {
     return this._brand;
   }
-  
+
   set brand(value) {
     this._brand = value;
   }
@@ -35,6 +35,6 @@ export default class Car {
 
   cloneCar() {
     const Species = this.constructor[Symbol.species];
-    return new Species;
+    return new Species();
   }
 }
