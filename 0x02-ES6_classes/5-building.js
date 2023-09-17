@@ -1,5 +1,3 @@
-import { type } from "os";
-
 export default class Building {
   constructor(sqft) {
     this._sqft = sqft;
@@ -18,9 +16,8 @@ export default class Building {
 
   set sqft(value) {
     if (typeof value !== 'number') {
-        throw new TypeError('sqft must be a number');
+      throw new TypeError('sqft must be a number');
     }
     this._sqft = value;
   }
-
 }
